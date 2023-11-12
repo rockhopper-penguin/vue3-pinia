@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    container_name: vue-app
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/vue-app
+    stdin_open: true
+    tty: true
+    command: /bin/sh
