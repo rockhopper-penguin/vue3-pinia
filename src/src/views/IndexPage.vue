@@ -1,7 +1,12 @@
 <template>
-  <div></div>
+  <div class="main-area">
+    <!-- ヘッダー -->
+    <HeaderComponent />
+  </div>
 </template>
 
 <style scoped></style>
 
-<script></script>
+<script setup lang="ts">
+import HeaderComponent from '../components/HeaderComponent.vue'
+</script>
