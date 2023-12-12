@@ -1,7 +1,7 @@
 /** 付箋新規登録時の型 */
 export interface createStickyNoteTypes {
   /** タイトル */
-  title: string | null
+  title: string
   /** 内容 */
-  content: string | null
+  content: string
 }

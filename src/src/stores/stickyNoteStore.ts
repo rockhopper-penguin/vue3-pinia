@@ -8,8 +8,8 @@ export const stickyNoteStore = defineStore('stickyNote', () => {
 
   // 付箋登録内容
   const stickyNote = reactive<createStickyNoteTypes>({
-    title: null,
-    content: null
+    title: '',
+    content: ''
   })
 
   /** 表示用の付箋登録内容 */
@@ -19,8 +19,8 @@ export const stickyNoteStore = defineStore('stickyNote', () => {
    * 付箋登録内容のリセット
    */
   const stickyNoteCancel = (): void => {
-    stickyNote.title = null
-    stickyNote.content = null
+    stickyNote.title = ''
+    stickyNote.content = ''
 
     // モーダルを閉じる
     stickyNoteModal.value = false
